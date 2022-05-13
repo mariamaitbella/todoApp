@@ -4,6 +4,7 @@ import {
   View,
   FlatList,
   Alert,
+  Text,
   TouchableWithoutFeedback,
   Keyboard,
 } from "react-native";
@@ -38,7 +39,7 @@ export default function App() {
 
   return (
     <TouchableWithoutFeedback
-      onPress={() => {
+      onPress={() => { 
         Keyboard.dismiss();
         console.log("dismissed");
       }}
