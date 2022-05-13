@@ -4,7 +4,6 @@ import {
   View,
   FlatList,
   Alert,
-  Text,
   TouchableWithoutFeedback,
   Keyboard,
 } from "react-native";
@@ -16,7 +15,13 @@ export default function App() {
   const [todos, setTodos] = useState([
     { text: "buy coffee", key: "1" },
     { text: "create an app", key: "2" },
-    { text: "play on the switch", key: "3" },
+    { text: "play on the switch", key: "4" },
+    { text: "smile", key: "5" },
+    { text: "clean the house", key: "6" },
+    { text: "write a diary", key: "7" },
+    { text: "go to gym", key: "8" },
+    { text: "dinner", key: "9" },
+    { text: "go shopping", key: "10" },
   ]);
 
   const pressHandler = (key) => {
@@ -39,7 +44,7 @@ export default function App() {
 
   return (
     <TouchableWithoutFeedback
-      onPress={() => { 
+      onPress={() => {
         Keyboard.dismiss();
         console.log("dismissed");
       }}
@@ -74,5 +79,6 @@ const styles = StyleSheet.create({
   list: {
     marginTop: 20,
     flex: 1,
+    // backgroundColor: "gold",
   },
 });
